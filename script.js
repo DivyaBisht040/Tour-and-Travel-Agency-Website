@@ -8,20 +8,20 @@ let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
 
 window.onscroll = () =>{
-    searchBtn.classList.remove('times');
+    searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('active');
-    menu.classList.remove('times');
+    menu.classList.remove('fa-times');
     navbar.classList.remove('active');
     loginForm.classList.remove('active');
 }
 
 menu.addEventListener('click', () =>{
-    menu.classList.toggle('times');
+    menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 });
 
 searchBtn.addEventListener('click', () =>{
-    searchBtn.classList.toggle('times');
+    searchBtn.classList.toggle('fa-times');
     searchBar.classList.toggle('active');
 });
 
